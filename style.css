@@ -3,6 +3,12 @@
 }
 
 .item {
-  width: 385px;
-  height: 217px;
+  min-height: 200px;
+  padding: 0;
+  margin: 5px 0;
+  background: url('img/Work/1.png') top center no-repeat;
+}
+
+.item img {
+  width: 100%;
 }
