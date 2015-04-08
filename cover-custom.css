@@ -3,6 +3,6 @@
   position: absolute;
 }
 
-.cover-container {
-  background-image: ;
+.site-wrapper {
+  background-image: url('img/Cover/overlay.png');
 }
