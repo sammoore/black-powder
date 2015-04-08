@@ -1,6 +1,26 @@
+/*
+ * Positioning
+ */
 .masthead,
 .mastfoot {
   position: absolute;
+}
+
+/*
+ * Assets
+ */ 
+.masthead-brand {
+  /* Move the text */
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  
+  /* Add Logo */
+  background: url('img/Cover/nav-logo.png') top left no-repeat;
+  
+  /* Restrict Bounds to Image Size */
+  height: 27px;
+  width: 308px;
 }
 
 .site-wrapper {
