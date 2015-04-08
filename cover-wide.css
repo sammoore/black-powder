@@ -1,0 +1,15 @@
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 900px;
+  }
+}
+
+@media (min-width: 1292px) {
+	.masthead,
+	.mastfoot,
+	.cover-container {
+		width: 1200px;
+	}
+}
