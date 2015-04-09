@@ -1,9 +1,10 @@
 /*
  * Positioning
  */
-.masthead,
-.mastfoot {
-  position: absolute;
+.cover-wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
 }
 
 .cover-heading,
@@ -11,27 +12,82 @@
   margin: 0 auto;
 }
 
+.inner {
+  padding-top: 20%;
+}
+
+.navbar-nav {
+  float: right;
+}
+
+.navbar-brand { 
+  float: left;
+}
+
+/*
+ * Navigation
+ */
+
+nav {
+  padding: 10px 0;
+  float: right;
+}
+
+.cover-nav > li {
+  display: inline-block;
+}
+.cover-nav > li + li {
+  margin-left: 20px;
+}
+.cover-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
+}
+.cover-nav > li > a:hover,
+.cover-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.cover-nav > .active > a,
+.cover-nav > .active > a:hover,
+.cover-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
 /*
  * Assets
  */
-.masthead-brand span,
-.cover-heading span {
+.brand span,
+.heading span {
   /* Hide Text */
   display: none;
 }
  
-.masthead-brand {  
-  background: url('img/Cover/nav-logo.png') top left no-repeat;
-  width: 308px;
+.brand {  
+  background: url('img/Cover/nav-logo.png') no-repeat;
   height: 27px;
+  width: 308px;
 }
 
-.cover-heading {
+.heading {
   background: url('img/Cover/cover-logo.png') top center no-repeat;
-  width: 858px;
+  background-size: 100%;
   height: 75px;
 }
 
-.site-wrapper {
+@media (min-width: 1200px) {
+  .heading {
+    background-size: inherit;
+  }
+}
+
+.cover-wrapper {
   background-image: url('img/Cover/overlay.png');
 }

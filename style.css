@@ -1,5 +1,5 @@
 body {
-  font-family: "corbertregular", "Helvetica Neue",Helvetica,Arial,sans-serif
+  font-family: "corbertregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .container h3 {
@@ -14,4 +14,15 @@ body {
 .item img {
   width: 98%;
   height: 98%;
+}
+
+.navbar-inverse {
+  background-color: transparent;
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .navbar-toggle {
+    display: none;
+  }
 }
