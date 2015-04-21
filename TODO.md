@@ -8,7 +8,8 @@
 
 ## Navigation
 
-- [ ] Hover color green / maybe use images
+- [x] Hover color green 
+- [ ] Fix size of links / use images (prefer text to images)
 - [ ] Check mobile color scheme
 - [ ] Check specification otherwise
 

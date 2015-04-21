@@ -21,6 +21,10 @@ body {
   border: none;
 }
 
+.nav.navbar-nav li a:hover {
+  color: #50E3C2;
+}
+
 @media (min-width: 768px) {
   .navbar-toggle {
     display: none;
