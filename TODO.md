@@ -21,7 +21,7 @@
 ## Grid
 
 - [ ] Background Texture
-- [ ] Color Hover Effect
+- [x] Color Hover Effect
 - [ ] Video Playback 
   - [ ] Implement Popup Video Playback (stable)
   - [ ] Implement Drop-down Vieo Playback (unstable)

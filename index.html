@@ -201,8 +201,43 @@
     <script src="js/jquery.sidr.min.js"></script>
 
     <script>
+
+    var configure_hoverThumbs = function (selector) {
+      var getImage = function(context) {
+        images = $(context).children("img");
+        image = null;
+
+        if (images.length > 0) {
+          image = images[0];
+        }
+
+        return image;
+      }
+
+      var addColor = function(event) {
+        image = $(getImage(this));
+        oldSrc = image.attr('src');
+        newSrc = oldSrc.split("BW").join("Color");
+        image.attr('src', newSrc);
+      };
+
+      var removeColor = function(event) {
+        image = $(getImage(this));
+        oldSrc = image.attr('src');
+        newSrc = oldSrc.split("Color").join("BW");
+        image.attr('src', newSrc);
+      };
+
+      $(selector).hover(
+        addColor, // on hover
+        removeColor //off hover
+      );
+    };
+
     $(document).ready(function () {
       $("#menu").sidr();
+      configure_hoverThumbs(".work-section .item");
+      configure_hoverThumbs(".impact-section .item");
     });
     </script>
   </body>
