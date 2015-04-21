@@ -56,33 +56,41 @@
       
       <div class="container">
 
-        <div class="row visible-xs-block visible-sm-block">
-          <div class="col-xs-12">
-            <a id="menu" href="#sidr">
-              <i class="glyphicon glyphicon-menu-hamburger"></i>
-            </a>
-          </div>
-        </div>
+        <div class="non-sticky">
+          <div class="row">
+            <!--
+              -- X-Small / Small Only Navigation Revealer
+              -->
+            <div class="visible-xs-block visible-sm-block col-xs-12">
+              <a id="menu" href="#sidr">
+                <i class="glyphicon glyphicon-menu-hamburger"></i>
+              </a>
+            </div>
 
-        <div class="row">
-          <div class="col-xs-12 col-md-4">
-            <h3 class="brand"><span>Black Powder Works</span></h3>
+            <!--
+              -- Navigation Header
+              -->
+            <div class="col-xs-12 col-md-4">
+              <h3 class="brand"><span>Black Powder Works</span></h3>
+            </div>
+            
+            <!--
+              -- Medium / Large Only Navigation Bar
+              -->
+            <nav class="visible-md-block visible-lg-block col-md-8 navbar navbar-inverse" role="navigation">
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div id="sidr" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.php">Work</a></li>
+                        <li><a href="#">Impact</a></li>
+                        <li><a href="#">Directors</a></li>
+                        <li><a href="#">DP</a></li>
+                        <li><a href="#">Post</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
           </div>
-          
-          <nav class="visible-md-block visible-lg-block col-md-8 navbar navbar-inverse" role="navigation">
-              
-              <!-- Collect the nav links, forms, and other content for toggling -->
-              <div id="sidr" class="collapse navbar-collapse">
-                  <ul class="nav navbar-nav">
-                      <li><a href="index.php">Work</a></li>
-                      <li><a href="#">Impact</a></li>
-                      <li><a href="#">Directors</a></li>
-                      <li><a href="#">DP</a></li>
-                      <li><a href="#">Post</a></li>
-                      <li><a href="#">Contact</a></li>
-                  </ul>
-              </div>
-          </nav>
         </div>
 
         <div class="inner cover">
