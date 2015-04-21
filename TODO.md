@@ -24,6 +24,7 @@
 
 - [ ] Background Texture
 - [x] Color Hover Effect
+  - [ ] Animated color change (add duration)
 - [ ] Video Playback 
   - [ ] Implement Popup Video Playback (stable)
   - [ ] Implement Drop-down Vieo Playback (unstable)
