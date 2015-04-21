@@ -26,14 +26,16 @@
 - [x] Color Hover Effect
   - [ ] Animated color change (add duration)
 - [ ] Video Playback 
+  - [ ] 
   - [ ] Implement Popup Video Playback (stable)
-  - [ ] Implement Drop-down Vieo Playback (unstable)
+  - [ ] Implement Drop-down Video Playback (unstable)
 - [ ] Correct Header Styling
 - [ ] Ensure mobile++ experience
 - [ ] Check specification otherwise
 
 ## Contact Page
 
+- [ ] Set up Cover-like styling (correctly)
 - [ ] Set up according to Chris's specification
 - [ ] Implement Jekyll / Other Contact Solution (see "Hosting" above).
 
