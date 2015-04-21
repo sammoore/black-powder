@@ -207,45 +207,27 @@
 
     <!-- Sidr Menu Javascript -->
     <script src="js/jquery.sidr.min.js"></script>
+    <script src="js/jquery.hoverImg.js"></script>
 
     <script>
 
-    var configure_hoverThumbs = function (selector) {
-      var getImage = function(context) {
-        images = $(context).children("img");
-        image = null;
+    var configureGridHoverImages = function( selector ) {
+      items = $(selector).find("img");
 
-        if (images.length > 0) {
-          image = images[0];
-        }
+      $.each(items, function () {
+        item = $(this);
 
-        return image;
-      }
+        hover_url = item.attr('src').split("BW.png").join("Color.png");
 
-      var addColor = function(event) {
-        image = $(getImage(this));
-        oldSrc = image.attr('src');
-        newSrc = oldSrc.split("BW").join("Color");
-        image.attr('src', newSrc);
-      };
-
-      var removeColor = function(event) {
-        image = $(getImage(this));
-        oldSrc = image.attr('src');
-        newSrc = oldSrc.split("Color").join("BW");
-        image.attr('src', newSrc);
-      };
-
-      $(selector).hover(
-        addColor, // on hover
-        removeColor //off hover
-      );
+        item.hoverImg(hover_url);
+      });
     };
 
     $(document).ready(function () {
       $("#menu").sidr();
-      configure_hoverThumbs(".work-section .item");
-      configure_hoverThumbs(".impact-section .item");
+      
+      configureGridHoverImages('.work-section');
+      configureGridHoverImages('.impact-section');
     });
     </script>
   </body>
