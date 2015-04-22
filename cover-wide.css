@@ -1,15 +1,15 @@
-@media (min-width: 992px) {
+/*@media (min-width: 992px) {
   .masthead,
   .mastfoot,
-  .cover-container {
-    width: 900px;
+  .cover > .container {
+    width: 700px;
   }
-}
-
+}*/
+/*
 @media (min-width: 1292px) {
 	.masthead,
 	.mastfoot,
 	.cover-container {
 		width: 1200px;
 	}
-}
+} */

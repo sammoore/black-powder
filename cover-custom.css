@@ -1,5 +1,41 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #333;
+}
+body {
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
 /* 
- * Add:
+ * Add to cover-wrapper:
  *    -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
               box-shadow: inset 0 0 100px rgba(0,0,0,.5);
  */
@@ -18,20 +54,28 @@
   display: table;
   width: inherit;
   height: inherit;
+  padding: 30px; /* in case table/table-cell fails */
   background-image: url('img/Cover/overlay.png');
 }
 
 .cover > .container {
   display: table-cell;
   vertical-align: middle;
+  margin: 0 auto;
 }
 
-/* Move navigation out of containers flow of content
- * to correctly center the inner cover.
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+/*
+ * Navigation
  */
 
 .non-sticky {
-  position: absolute;
+  position: absolute; /* Check + Update Position, maybe cover-heading */
+  min-height: 58px;
   width: 100%;
   top: 0;
   left: 0;
@@ -42,29 +86,7 @@
   margin: 0 auto;
 }
 
-/*
- * Positioning
- */
-
-.cover-heading,
-.lead {
-  margin: 0 auto;
-}
-
-.navbar-nav {
-  float: right;
-}
-
-.navbar-brand { 
-  float: left;
-}
-
-/*
- * Navigation
- */
-
-nav {
-  padding: 10px 0;
+.cover-nav {
   float: right;
 }
 
@@ -74,25 +96,34 @@ nav {
 .cover-nav > li + li {
   margin-left: 20px;
 }
+
 .cover-nav > li > a {
   padding-right: 0;
   padding-left: 0;
+  padding-bottom: 0;
   font-size: 16px;
   font-weight: bold;
-  color: #fff; /* IE8 proofing */
+  line-height: 30px;
+}
+
+.navbar-inverse .cover-nav > li > a {
+  color: #fff;
   color: rgba(255,255,255,.75);
   border-bottom: 2px solid transparent;
 }
-.cover-nav > li > a:hover,
-.cover-nav > li > a:focus {
+
+.navbar-inverse .cover-nav > li > a:hover,
+.navbar-inverse .cover-nav > li > a:focus {
   background-color: transparent;
+  color: #50E3C2;
   border-bottom-color: #a9a9a9;
   border-bottom-color: rgba(255,255,255,.25);
 }
-.cover-nav > .active > a,
-.cover-nav > .active > a:hover,
-.cover-nav > .active > a:focus {
-  color: #fff;
+
+.navbar-inverse .cover-nav > .active > a,
+.navbar-inverse .cover-nav > .active > a:hover,
+.navbar-inverse .cover-nav > .active > a:focus {
+  color: #50E3C2;
   border-bottom-color: #fff;
 }
 
