@@ -33,9 +33,11 @@
 - [x] Background Texture
 - [x] Color Hover Effect
   - [ ] Animated color change (add duration)
-- [ ] Video Playback 
-  - [ ] Link To Videos (missing some from BP, waiting on Me/Chris)
-  - [ ] Implement Popup Video Playback (stable)
+- [x] Video Playback 
+  - [ ] Link To Videos
+    - [ ] What Currently Exists Easily
+    - [ ] Upload Remaining Videos or find them on their Vimeo?
+  - [x] Implement Popup Video Playback (stable)
   - [ ] Implement Drop-down Video Playback (unstable)
 - [ ] Correct Header Styling
 - [ ] Correct Padding
