@@ -9,10 +9,17 @@
 ## Navigation
 
 - [x] Hover color green 
-- [ ] Fix size of links / use images (prefer text to images)
-- [ ] Ask whether to make navigation bar sticky 
+- [x] Fix size of links
+- [ ] Ask whether to make navigation bar sticky / limited to viewport
 - [ ] Check mobile color scheme
-- [ ] Check specification otherwise
+- [-] Check specification otherwise
+- [ ] Working Links
+
+## Subnavigation
+
+- [ ] Static Version
+- [ ] Animate In
+- [ ] Make page for each team member
 
 ## Cover 1 - Splash
 
@@ -23,7 +30,7 @@
 
 ## Grid
 
-- [ ] Background Texture
+- [x] Background Texture
 - [x] Color Hover Effect
   - [ ] Animated color change (add duration)
 - [ ] Video Playback 
@@ -31,6 +38,7 @@
   - [ ] Implement Popup Video Playback (stable)
   - [ ] Implement Drop-down Video Playback (unstable)
 - [ ] Correct Header Styling
+- [ ] Correct Padding
 - [ ] Ensure mobile++ experience
 - [ ] Check specification otherwise
 
