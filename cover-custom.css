@@ -14,14 +14,14 @@
   background-color: green;
 }
 
-.cover-wrapper > .container {
+.cover {
   display: table;
   width: inherit;
   height: inherit;
   background-image: url('img/Cover/overlay.png');
 }
 
-.cover-wrapper > .container > .inner.cover {
+.cover > .container {
   display: table-cell;
   vertical-align: middle;
 }
