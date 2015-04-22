@@ -10,6 +10,7 @@
 
 - [x] Hover color green 
 - [ ] Fix size of links / use images (prefer text to images)
+- [ ] Ask whether to make navigation bar sticky 
 - [ ] Check mobile color scheme
 - [ ] Check specification otherwise
 
@@ -26,7 +27,7 @@
 - [x] Color Hover Effect
   - [ ] Animated color change (add duration)
 - [ ] Video Playback 
-  - [ ] 
+  - [ ] Link To Videos (missing some from BP, waiting on Me/Chris)
   - [ ] Implement Popup Video Playback (stable)
   - [ ] Implement Drop-down Video Playback (unstable)
 - [ ] Correct Header Styling
