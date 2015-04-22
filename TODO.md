@@ -25,7 +25,7 @@
 ## Cover 1 - Splash
 
 - [x] POC Background Image w/ Overlay
-- [ ] Get Background Image From Assets/Chris
+- [x] Get Background Image From Assets/Chris
 - [x] Correct Positioning of Splash Logo + Text
 - [ ] Check specification otherwise
 
