@@ -12,8 +12,9 @@
 - [x] Fix size of links
 - [ ] Ask whether to make navigation bar sticky / limited to viewport
 - [ ] Check mobile color scheme
+- [x] Mobile Menu Closing Fix
 - [-] Check specification otherwise
-- [ ] Working Links
+- [-] Working Links
 
 ## Subnavigation
 
