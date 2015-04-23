@@ -2,6 +2,14 @@ body {
   font-family: "corbertregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.col-menu {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #333;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 1.8em;
+}
+
 .container h3 {
   text-align: left;
 }
@@ -53,7 +61,9 @@ body {
 .contact-section ul li {
   display: block;
   margin: 20px;
-  padding: 0;
-  background-color: green;
+  padding: 10px;
+  background-color: #888;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
   float: left;
 }

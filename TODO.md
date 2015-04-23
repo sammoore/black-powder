@@ -12,7 +12,7 @@
 - [x] Fix size of links
 - [ ] Ask whether to make navigation bar sticky
 - [x] Limit Navigation to viewport
-- [ ] Add bar on mobile to make menu more visible
+- [x] Add bar on mobile to make menu more visible
 - [ ] Check mobile color scheme
 - [x] Mobile Menu Closing Fix
 - [-] Check specification otherwise
@@ -44,7 +44,7 @@
   	- [ ] Implement Drop-down Video Playback (unstable)
 - [ ] Correct Header Styling
 - [ ] Correct Padding
-- [ ] Ensure mobile++ experience
+- [x] Ensure mobile++ experience (3xX grid on SM viewport)
 - [ ] Check specification otherwise
 
 ## Contact Page
