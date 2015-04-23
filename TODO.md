@@ -2,7 +2,7 @@
 
 ## Hosting
 
-- [ ] Set up GitHub Pages URL
+- [x] Set up GitHub Pages URL
 - [ ] Set up Contact Form via Jekyll + gh-pages or switch to Heroku
 - [ ] Acquire domain registrar information from Sturgis
 
