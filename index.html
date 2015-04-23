@@ -43,44 +43,46 @@
           <li><a href="#">Directors</a></li>
           <li><a href="#">DP</a></li>
           <li><a href="#">Post</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
 
-      <div class="row">
-        <!--
-          -- X-Small / Small Only Navigation Revealer
-          -->
-        <div class="visible-xs-block visible-sm-block col-xs-12">
-          <a id="menu" href="#sidr">
-            <i class="glyphicon glyphicon-menu-hamburger"></i>
-          </a>
-        </div>
+      <div class="container">
+        <div class="row">
+          <!--
+            -- X-Small / Small Only Navigation Revealer
+            -->
+          <div class="visible-xs-block visible-sm-block col-xs-12">
+            <a id="menu" href="#sidr">
+              <i class="glyphicon glyphicon-menu-hamburger"></i>
+            </a>
+          </div>
 
-        <!--
-          -- Navigation Header
-          -->
-        <div class="col-xs-12 col-md-4">
-          <h3 class="brand"><span>Black Powder Works</span></h3>
-        </div>
+          <!--
+            -- Navigation Header
+            -->
+          <div class="col-xs-12 col-md-4">
+            <h3 class="brand"><span>Black Powder Works</span></h3>
+          </div>
+          
+          <!--
+            -- Medium / Large Only Navigation Bar
+            -->
+          <nav class="visible-md-block visible-lg-block col-md-8 navbar-inverse" role="navigation">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <ul class="cover-nav nav navbar-nav">
+              <li><a href="#work">Work</a></li>
+              <li><a href="#impact">Impact</a></li>
+              <li><a href="#">Directors</a></li>
+              <li><a href="#">DP</a></li>
+              <li><a href="#">Post</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
         
-        <!--
-          -- Medium / Large Only Navigation Bar
-          -->
-        <nav class="visible-md-block visible-lg-block col-md-8 navbar-inverse" role="navigation">
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <ul class="cover-nav nav navbar-nav">
-            <li><a href="#work">Work</a></li>
-            <li><a href="#impact">Impact</a></li>
-            <li><a href="#">Directors</a></li>
-            <li><a href="#">DP</a></li>
-            <li><a href="#">Post</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
+        </div> <!-- end .row -->
+      </div><!-- end .container -->
       
-      </div> <!-- end .row -->
-    
     </div> <!-- end .non-sticky -->
 
     <div class="cover-wrapper splash">
@@ -229,20 +231,76 @@
       </div>
     </div>
     
-    <div class="cover-wrapper">
-      <div class="cover">
-        <div class="container">
-          <div class="row text-center">
-            <div class="col-xs-12 col-sm-6">
-              Hello
-            </div>
-            <div class="col-xs-12 col-sm-6">
-              Hello again.
-            </div>
-          </div> <!-- end row -->
-        </div> <!-- end .container -->
-      </div> <!-- end .cover -->
-    </div> <!-- end .cover-wrapper -->
+      <div class="cover-wrapper contact">
+        <div class="cover">
+          <div class="container">
+            <div class="row text-center">
+              
+              <!-- Left Hand / Top -->
+              <div class="col-xs-12 col-sm-6">
+
+                <div class="row">
+                  <div class="col-xs-10 col-xs-offset-1 contact-section">
+                    
+                    <h3>Black Powder Works</h3>
+
+                    <dl class="contact-info-list">
+                      <dt>Raul Gasteazoro - Founder / Executive Producer</dt>
+                      <dl>e: <a href="mailto:raul@blackpowderworks.com">raul@blackpowderworks.com</a></dl>
+                      <dt>Casey Unterman - Producer / Business Manager</dt>
+                      <dl>e: <a href="mailto:casey@blackpowderworks.com">casey@blackpowderworks.com</a></dl>
+                      <dt>Ian Rowan - Associate Producer / Social Media</dt>
+                      <dl>e: <a href="mailto:ian@blackpowderworks.com">ian@blackpowderworks.com</a></dl>
+                    </dl>
+
+                    <ul class="contact-info-social center-block">
+                      <li>TW</li>
+                      <li>FB</li>
+                      <li>YT</li>
+                      <li>Vimeo</li>
+                    </ul>
+
+                  </div>
+
+                  <div class="clear"></div>
+                </div>
+
+              </div>
+
+              <!-- Right Hand / Bottom -->
+              <div class="col-xs-12 col-sm-6">
+                
+                <div class="row">
+                  <div class="col-xs-10 col-xs-offset-1 contact-section">
+
+                    <form>
+
+                      <div class="form-group">
+                        <label for="contact-name">Name (Required):</label>
+                        <input type="text" class="form-control" id="contact-name" placeholder="">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="contact-email">Email (Required):</label>
+                        <input type="email" class="form-control" id="contact-email" placeholder="">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="contact-message">Message</label>
+                        <textarea class="form-control" rows="5" id="contact-message"></textarea>
+                      </div>
+
+                    </form>
+
+                  </div>
+                </div>
+
+              </div>
+            
+            </div> <!-- end row -->
+          </div> <!-- end .container -->
+        </div> <!-- end .cover -->
+      </div> <!-- end .cover-wrapper -->
     
 
     <!-- Bootstrap core JavaScript

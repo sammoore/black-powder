@@ -20,3 +20,40 @@ body {
   background-color: transparent;
   border: none;
 }
+
+.cover-wrapper.contact {
+  background-image: url('img/cover-background.png');
+  background-size: 100% auto;
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-section {
+  color: black;
+  background-color: #CCC;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding-top: 10px;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-section dl, .contact-section ul {
+  text-align: left;
+}
+
+.contact-section ul {
+  list-style: none;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0;
+  min-height: 50px;
+}
+
+.contact-section ul li {
+  display: block;
+  margin: 20px;
+  padding: 0;
+  background-color: green;
+  float: left;
+}

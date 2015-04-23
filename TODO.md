@@ -2,21 +2,23 @@
 
 ## Hosting
 
+- [ ] Set up GitHub Pages URL
 - [ ] Set up Contact Form via Jekyll + gh-pages or switch to Heroku
-- [ ] Acquire preferred contact email address from Sturgis
 - [ ] Acquire domain registrar information from Sturgis
 
 ## Navigation
 
 - [x] Hover color green 
 - [x] Fix size of links
-- [ ] Ask whether to make navigation bar sticky / limited to viewport
+- [ ] Ask whether to make navigation bar sticky
+- [x] Limit Navigation to viewport
+- [ ] Add bar on mobile to make menu more visible
 - [ ] Check mobile color scheme
 - [x] Mobile Menu Closing Fix
 - [-] Check specification otherwise
 - [-] Working Links
 
-## Subnavigation
+## Subnavigation (i.e. Directors)
 
 - [ ] Static Version
 - [ ] Animate In
@@ -39,7 +41,7 @@
     - [ ] What Currently Exists Easily
     - [ ] Upload Remaining Videos or find them on their Vimeo?
   - [x] Implement Popup Video Playback (stable)
-  - [ ] Implement Drop-down Video Playback (unstable)
+  	- [ ] Implement Drop-down Video Playback (unstable)
 - [ ] Correct Header Styling
 - [ ] Correct Padding
 - [ ] Ensure mobile++ experience
@@ -47,10 +49,12 @@
 
 ## Contact Page
 
-- [ ] Set up Cover-like styling (correctly)
-- [ ] Set up according to Chris's specification
-- [ ] Implement Jekyll / Other Contact Solution (see "Hosting" above).
+- [x] Set up Cover-like styling (correctly)
+- [x] Set up according to Chris's layout
+- [ ] Assets, colors, up to Chris's specification
+- [ ] Acquire preferred contact email address from Sturgis
 
 ## Issues
 
 - [ ] "img/Impact/Planned Parenthood Color.png" is just a transparent png file.
+- [ ] Grey Thumbnail?
