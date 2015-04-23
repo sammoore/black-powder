@@ -15,8 +15,8 @@
 - [x] Add bar on mobile to make menu more visible
 - [ ] Check mobile color scheme
 - [x] Mobile Menu Closing Fix
-- [-] Check specification otherwise
-- [-] Working Links
+- [x] Check specification otherwise
+- [ ] Working Links For All Nav Items Once Everything Else Complete
 
 ## Subnavigation (i.e. Directors)
 
