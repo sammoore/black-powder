@@ -75,9 +75,9 @@
             <ul class="cover-nav nav navbar-nav">
               <li><a href="#work">Work</a></li>
               <li><a href="#impact">Impact</a></li>
-              <li><a href="#sub-nav">Directors</a></li>
-              <li><a href="#sub-nav">DP</a></li>
-              <li><a href="#sub-nav">Post</a></li>
+              <li><a id="toggleNav" href="#directors">Directors</a></li>
+              <li><a id="toggleNav" href="#dp">DP</a></li>
+              <li><a id="toggleNav" href="#post">Post</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
           </nav>
@@ -435,12 +435,19 @@ $(document).ready(function () {
   configureGrid('.work-section');
   configureGrid('.impact-section');
 
-  $('a[href$="#sub-nav"]').click(function () {
+  toggleNavSelector = 'a#toggleNav';
+
+  $(toggleNavSelector).click(function () {
     console.log("Damian eats pussy.");
 
+    togglers = $(toggleNavSelector);
+    togglers.each(function () {
+      selector = '.' + $(this).attr('href').split('#').join('');
+      $(selector).toggleClass('hidden', true);
+    });
 
-
-    $('.directors').toggleClass('hidden', 400);
+    selector = '.' + $(this).attr('href').split('#').join('');
+    $(selector).toggleClass('hidden');
   });
 });
 
