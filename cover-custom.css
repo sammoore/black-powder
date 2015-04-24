@@ -145,6 +145,59 @@ body {
 }
 
 /*
+ * Subnavigation
+ * 
+ * NOTES: 
+ *  In mock-ups, the full width is ~1172px and each section of
+ *  the sub-nav (3 sections) take up ~295px, together centered.
+ *
+ *  That makes roughly 1/4 of the viewport is each section. The
+ *  mockup is for the large viewport, so we'll see how 1/3 looks
+ *  on medium. On Small and XSmall, we have can use sidr/sub-ul.
+ *
+ *  
+ *
+ */
+
+.row-centered {
+  text-align: center;
+}
+
+.col-centered {
+  display: inline-block;
+  float: none;
+}
+
+.sub-nav .col-centered + .col-centered {
+  border-left: 1px solid white;
+}
+
+.sub-nav ul {
+  list-style-type: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* takes up entire viewport; a section */
+
+.sub-nav-section {
+  background-color: green;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.sub-nav-section:not(.directors) {
+  display: none;
+}
+
+/* each sub-nav-section has one, maybe more, rows */
+
+.sub-nav-section .row .col-centered {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/*
  * Assets
  */
 .brand span,
