@@ -181,20 +181,17 @@ body {
 /* takes up entire viewport; a section */
 
 .sub-nav-section {
-  background-color: green;
+  background-color: #50E3C2;
+  background-color: rgba(80,227,194, 0.60);
   padding-top: 10px;
   padding-bottom: 10px;
-}
-
-.sub-nav-section:not(.directors) {
-  display: none;
 }
 
 /* each sub-nav-section has one, maybe more, rows */
 
-.sub-nav-section .row .col-centered {
-  padding-top: 10px;
-  padding-bottom: 10px;
+.sub-nav-section ul li {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 /*

@@ -35,7 +35,9 @@
   <body>
 
     <div class="non-sticky">
-          
+      
+      <a id="sub-nav"></a>
+
       <div id="sidr" class="hidden-lg hidden-md">
         <ul>
           <li><a href="#work">Work</a></li>
@@ -73,17 +75,17 @@
             <ul class="cover-nav nav navbar-nav">
               <li><a href="#work">Work</a></li>
               <li><a href="#impact">Impact</a></li>
-              <li><a href="#">Directors</a></li>
-              <li><a href="#">DP</a></li>
-              <li><a href="#">Post</a></li>
+              <li><a href="#sub-nav">Directors</a></li>
+              <li><a href="#sub-nav">DP</a></li>
+              <li><a href="#sub-nav">Post</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
           </nav>
         
         </div> <!-- end .row -->
         <div class="row sub-nav visible-md-block visible-lg-block sub-nav">
-          <a id="directors"></a>
-          <div class="directors sub-nav-section col-md-12">
+          
+          <div class="directors hidden sub-nav-section col-md-12">
             <div class="row row-centered">
               <div class="col-md-3 col-centered">
                 <ul>
@@ -105,8 +107,7 @@
               </div>
             </div>
           </div>
-          <a id="dp"></a>
-          <div class="dp sub-nav-section col-md-12">
+          <div class="dp hidden sub-nav-section col-md-12">
             <div class="row row-centered">
               <div class="col-md-3 col-centered">
                 <ul>
@@ -128,8 +129,7 @@
               </div>
             </div>
           </div>
-          <a id="post"></a>
-          <div class="post sub-nav-section col-md-12">
+          <div class="post hidden sub-nav-section col-md-12">
             <div class="row row-centered">
               <div class="col-md-3 col-centered">
                 <ul>
@@ -434,6 +434,14 @@ $(document).ready(function () {
   
   configureGrid('.work-section');
   configureGrid('.impact-section');
+
+  $('a[href$="#sub-nav"]').click(function () {
+    console.log("Damian eats pussy.");
+
+
+
+    $('.directors').toggleClass('hidden', 400);
+  });
 });
 
     </script>
