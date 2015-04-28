@@ -2,9 +2,18 @@
 
 ## Assets
 
-- [ ] Confirm all "links to video URLs" in spreadsheet are accurate. See ASSETS.md for problems.
-- [ ] Find videos that are missing from spreadsheet but are readily available from Vimeo/YT
+- [x] Confirm all "links to video URLs" in spreadsheet are accurate.
+- [x] Find videos that are missing from spreadsheet but are readily available from Vimeo/YT
 - [ ] Upload remaining content to Vimeo
+  - [ ] Choose Kris' Videos?
+  - [ ] Upload 3  x Kris Carrillo
+  - [ ] Upload 3  x Danny Drysdale
+  - [ ] Upload 2  x Robb Webb
+  - [ ] Upload 3  x West Channel 
+  - [ ] Upload 3  x Jeremy Hansen
+  - [ ] Upload 3  x Duncan Shepherd
+  - [ ] Upload 14 x Works/Impacts
+  - [ ] PW Protection: Michah Levin's Grow (MMM account), Parker Howell's Audience Target Presentation (Parker's account)
 
 ## Navigation
 
