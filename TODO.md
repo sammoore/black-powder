@@ -76,5 +76,6 @@
 
 ## Issues
 
+- [ ] Until Chris can help with assets, Directors/DP/Post will only have color thumbnails / no hover.
 - [ ] "img/Impact/Planned Parenthood Color.png" is just a transparent png file.
-- [ ] Grey Thumbnail?
+- [ ] Grey Thumbnail in Works?
