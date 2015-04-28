@@ -61,7 +61,7 @@
             <a href="#">DP</a>
             <ul>
               <li><a href="#">Derek Bauer</a></li>
-              <li><a href="#">Jeffrey Waldron</a><</li>
+              <li><a href="#">Jeffrey Waldron</a></li>
               <li><a href="#">Kris Carrillo</a></li>
               <li><a href="#">Robb Webb</a></li>
               <li><a href="#">Zach Nicholson</a></li>
@@ -476,14 +476,18 @@ $(document).ready(function () {
   $(toggleNavSelector).click(function () {
     console.log("Damian eats pussy.");
 
+    selector = '.' + $(this).attr('href').split('#').join('');
+    isHidden = $(selector).hasClass('hidden');
+
     togglers = $(toggleNavSelector);
     togglers.each(function () {
-      selector = '.' + $(this).attr('href').split('#').join('');
-      $(selector).toggleClass('hidden', true);
+      eachSelector = '.' + $(this).attr('href').split('#').join('');
+      $(eachSelector).toggleClass('hidden', true);
     });
 
-    selector = '.' + $(this).attr('href').split('#').join('');
-    $(selector).toggleClass('hidden');
+    if (isHidden == true) {
+      $(selector).toggleClass('hidden');
+    }
   });
 });
 
