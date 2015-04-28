@@ -35,9 +35,9 @@
 
 ## Directors, DP, and Post
 
-- [ ] Create
-- [ ] Update HTML for correct artists
-- [ ] Tag each space for given artist (for links)
+- [x] Create
+- [x] Update HTML for correct artists
+- [x] Tag each space for given artist (for links)
 - [ ] Update each item's thumbnail
 - [ ] Update each item's video URL
 
