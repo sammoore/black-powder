@@ -183,6 +183,8 @@ body {
 .sub-nav-section {
   background-color: #50E3C2;
   background-color: rgba(80,227,194, 0.60);
+  background-color: #888888;
+  background-color: rgba(125, 125, 125, 0.80);
   padding-top: 10px;
   padding-bottom: 10px;
 }
