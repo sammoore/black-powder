@@ -19,6 +19,11 @@ video#bgvid {
   background-size: cover;
 }
 
+@media screen and (max-device-width: 800px) {
+  .cover-wrapper { background: url('img/cover-background.png') #000 no-repeat center center fixed; }
+  video#bgvid { display: none; }
+}
+
 .container h3 {
   text-align: left;
 }
