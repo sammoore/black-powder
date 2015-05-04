@@ -5,7 +5,7 @@
 - [x] Confirm all "links to video URLs" in spreadsheet are accurate.
 - [x] Find videos that are missing from spreadsheet but are readily available from Vimeo/YT
 - [ ] Raul Gasteazoro Black Pearl; different thumbnail image
-- [ ] Zach Galler has miszied color thumbnail.
+- [ ] Zach Galler has misized color thumbnail.
 - [ ] Upload remaining content to Vimeo
   - [ ] Choose Kris' Videos?
   - [ ] Upload 3  x Kris Carrillo
