@@ -4,24 +4,26 @@
 
 - [x] Confirm all "links to video URLs" in spreadsheet are accurate.
 - [x] Find videos that are missing from spreadsheet but are readily available from Vimeo/YT
-- [ ] Raul Gasteazoro Black Pearl; different thumbnail image
-- [ ] Zach Galler has misized color thumbnail.
+- [ ] Raul Gasteazoro Black Pearl; different thumbnail image (Chris sent updated thumbs)
+- [ ] Zach Galler has misized color thumbnail (Chris sent updated thumbs)
 - [ ] Upload remaining content to Vimeo
-  - [ ] Upload 3  x Jeremy Hansen
-  - [ ] Upload 3  x Duncan Shepherd
+  - [ ] Upload 2  x Jeremy Hansen
+  - [x] Upload 3  x Duncan Shepherd
   - [x] Upload 2  x Robb Webb
   - [x] Upload 3  x West Channel 
   - [x] Upload 14 x Works/Impacts (for missing see Work section)
   - [ ] Choose Kris' Videos (asked Chris)
   - [ ] Upload 3  x Kris Carrillo
+  - [ ] Jeremy C. Hansen "Keys" is 3.1 GB
+  - [ ] Upload 3  x Danny Drysdale (currently using YouTube)
   - [ ] PW Protection: Michah Levin's Grow (MMM account)
   - [ ] PW Protection: Parker Howell's Audience Target Presentation (Parker's account)
-  - [ ] Upload 3  x Danny Drysdale (currently using YouTube)
 
 ## Navigation
 
 - [x] Hover color green 
 - [x] Fix size of links
+- [ ] Use grey background and check colors with team.
 - [ ] Ask whether to make navigation bar sticky
 - [x] Limit Navigation to viewport
 - [x] Add bar on mobile to make menu more visible
@@ -33,7 +35,6 @@
 ## Subnavigation (i.e. Directors)
 
 - [x] Static Version
-- [ ] Animate In
 - [ ] Add visible 'X' rather than clicking on nav again to close.
 
 ## Work
@@ -84,6 +85,6 @@
 
 ## Issues
 
-- [ ] Until Chris can help with assets, Directors/DP/Post will only have color thumbnails / no hover.
+- [x] Until Chris can help with assets, Directors/DP/Post will only have color thumbnails / no hover.
 - [ ] "img/Impact/Planned Parenthood Color.png" is just a transparent png file.
 - [ ] Grey Thumbnail in Works?
