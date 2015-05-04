@@ -7,15 +7,16 @@
 - [ ] Raul Gasteazoro Black Pearl; different thumbnail image
 - [ ] Zach Galler has misized color thumbnail.
 - [ ] Upload remaining content to Vimeo
-  - [ ] Choose Kris' Videos?
-  - [ ] Upload 3  x Kris Carrillo
-  - [ ] Upload 3  x Danny Drysdale
-  - [ ] Upload 2  x Robb Webb
-  - [ ] Upload 3  x West Channel 
   - [ ] Upload 3  x Jeremy Hansen
   - [ ] Upload 3  x Duncan Shepherd
-  - [ ] Upload 14 x Works/Impacts
-  - [ ] PW Protection: Michah Levin's Grow (MMM account), Parker Howell's Audience Target Presentation (Parker's account)
+  - [x] Upload 2  x Robb Webb
+  - [x] Upload 3  x West Channel 
+  - [x] Upload 14 x Works/Impacts (for missing see Work section)
+  - [ ] Choose Kris' Videos (asked Chris)
+  - [ ] Upload 3  x Kris Carrillo
+  - [ ] PW Protection: Michah Levin's Grow (MMM account)
+  - [ ] PW Protection: Parker Howell's Audience Target Presentation (Parker's account)
+  - [ ] Upload 3  x Danny Drysdale (currently using YouTube)
 
 ## Navigation
 
@@ -24,7 +25,7 @@
 - [ ] Ask whether to make navigation bar sticky
 - [x] Limit Navigation to viewport
 - [x] Add bar on mobile to make menu more visible
-- [ ] Check mobile color scheme
+- [x] Check mobile color scheme
 - [x] Mobile Menu Closing Fix
 - [x] Check specification otherwise
 - [ ] Working Links For All Nav Items Once Everything Else Complete
@@ -34,6 +35,11 @@
 - [x] Static Version
 - [ ] Animate In
 - [ ] Add visible 'X' rather than clicking on nav again to close.
+
+## Work
+
+- [x] Tokyo Milk has no video (upload to Vimeo)
+- [ ] Secret Confessions needs to be confirmed and thumbnailed (Chris notified).
 
 ## Directors, DP, and Post
 
