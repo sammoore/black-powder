@@ -7,14 +7,14 @@
 - [ ] Raul Gasteazoro Black Pearl; different thumbnail image (Chris sent updated thumbs)
 - [ ] Zach Galler has misized color thumbnail (Chris sent updated thumbs)
 - [ ] Upload remaining content to Vimeo
-  - [ ] Upload 2  x Jeremy Hansen
+  - [x] Upload 2  x Jeremy Hansen
   - [x] Upload 3  x Duncan Shepherd
   - [x] Upload 2  x Robb Webb
   - [x] Upload 3  x West Channel 
   - [x] Upload 14 x Works/Impacts (for missing see Work section)
   - [ ] Choose Kris' Videos (asked Chris)
   - [ ] Upload 3  x Kris Carrillo
-  - [ ] Jeremy C. Hansen "Keys" is 3.1 GB
+  - [ ] Jeremy C. Hansen "Keys" is 3.1 GB, upload
   - [ ] Upload 3  x Danny Drysdale (currently using YouTube)
   - [ ] PW Protection: Michah Levin's Grow (MMM account)
   - [ ] PW Protection: Parker Howell's Audience Target Presentation (Parker's account)

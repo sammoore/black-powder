@@ -53,16 +53,20 @@ body {
   width: 100%;
   height: 100%; /* For at least Firefox */
   min-height: 100%;
+  overflow: hidden;
 }
 
 .cover-wrapper.splash {
-  background-image: url('img/cover-background.png');
   background-size: 100% auto;
   background-size: cover;
   background-position: center;
 }
 
 .cover {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
   display: table;
   width: inherit;
   height: inherit;
@@ -91,6 +95,7 @@ body {
 
 .non-sticky {
   position: absolute; /* Check + Update Position, maybe cover-heading */
+  z-index: 200;
   min-height: 58px;
   width: 100%;
   top: 0;

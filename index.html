@@ -195,6 +195,11 @@
 
     <div class="cover-wrapper splash">
 
+      <video autoplay loop poster="img/cover-background.png" id="bgvid" class="stretchToFit">
+        <source src="video/splash.webm" type="video/webm">
+        <source src="video/splash.mp4" type="video/mp4">
+      </video>
+
       <div class="cover overlay text-center">
 
         <div class="container">
@@ -340,7 +345,7 @@
     </div>
     
       <div class="cover-wrapper contact">
-        <div class="cover">
+        <div class="cover-contact">
           <div class="container">
             <div class="row text-center">
               
@@ -487,6 +492,53 @@ $(document).ready(function () {
     if (isHidden == true) {
       $(selector).toggleClass('hidden');
     }
+  });
+
+  /* RESIZE VIDEO CODE */
+
+  var ResizeVideo = function(_VideoElement) {
+    console.log("hi");
+    $VideoElement = $(_VideoElement); //Cache Jquery reference of this
+    var iOriginalVideoHeight =  _VideoElement.videoHeight;
+    var iCurrentVideoHeight = $VideoElement.width();
+    var iVideoContainerHeight = $VideoElement.parent().width();
+    var iCurrentScale = iOriginalVideoHeight/iCurrentVideoHeight;
+    var iScaleY = (iVideoContainerHeight / iOriginalVideoHeight)*iCurrentScale;
+    
+    console.log($VideoElement.parent().height());
+    
+    //Important to note: Set the origin to the top left corner (0% 0%), or else the position of the video goes astray
+     $VideoElement.css({
+        "transform-origin": "0% 0%",
+        "transform":"scaleX(" + iScaleY +")",
+        "-ms-transform-origin" : "0% 0% ",            /* IE 9 */
+        "-ms-transform":"scaleX(" + iScaleY +")",     /* IE 9 */
+        "-moz-transform-origin" : "0% 0%",            /* Firefox */
+        "-moz-transform":"scaleX(" + iScaleY +")",    /* Firefox */
+        "-webkit-transform-origin": "0% 0%",          /* Safari and Chrome */
+        "-webkit-transform":"scaleX(" + iScaleY +")", /* Safari and Chrome */
+        "-o-transform-origin":"0% 0%",                /* Opera */
+        "-o-transform":"scaleX(" + iScaleY +")"       /* Opera */
+     }); 
+  };
+
+  $(window).resize(function() {
+    $('.stretchToFit').each(function() {
+      var CurrentChild = this;
+      ResizeVideo(CurrentChild);
+    });
+  });
+
+  $('video').bind("loadeddata", function(anEvent) {
+    var loadedVideoElement = anEvent.target;
+    if ($(loadedVideoElement).hasClass('stretchToFit')) {
+      ResizeVideo(loadedVideoElement);
+    }
+  });
+
+  $('.stretchToFit').each(function() {
+    var CurrentChild = this;
+    ResizeVideo(CurrentChild);
   });
 });
 
