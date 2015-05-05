@@ -217,7 +217,8 @@ body {
 }
  
 .brand {  
-  background: url('img/Cover/nav-logo.png') no-repeat;
+  background: url('img/BPW_Logo@2x.png') no-repeat;
+  background-size: 57px 32px;
   height: 27px;
   width: 308px;
 }
