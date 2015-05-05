@@ -440,78 +440,7 @@
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/jquery.hoverImg.js"></script>
 
-    <script>
-
-var configureGridItemHover = function( img ) {
-  hover_url = img.attr('src').split("BW.png").join("Color.png");
-
-  img.hoverImg(hover_url);
-};
-
-var configureGridItemPlayback = function ( a ) {
-  a.magnificPopup({
-    disableOn: 700,
-    type: 'iframe',
-    mainClass: 'mfp-fade',
-    removalDelay: 160,
-    preloader: false,
-    fixedContentPos: false,
-    iframe: {
-      patterns: {
-        vimeo: {
-          index: 'vimeo.com/',
-          id: '/',
-          src: 'https://player.vimeo.com/video/%id%?autoplay=1'
-        },
-        youtube: {
-          index: 'youtu.be/',
-          id: '/',
-          src: 'http://www.youtube.com/embed/%id%?autoplay=1'
-        }
-      }
-    }
-  });
-};
-
-var configureGrid = function( selector ) {
-  items = $(selector).find('.item');
-
-  $.each(items, function () {
-    item = $(this);
-
-    a = item.find('a').first();
-    configureGridItemPlayback(a);
-
-    img = item.find('img').first();
-    configureGridItemHover(img);
-  });
-};
-
-$(document).ready(function () {
-  $("#menu").sidr();
-  
-  configureGrid('.work-section');
-  configureGrid('.impact-section');
-
-  toggleNavSelector = 'a#toggleNav';
-
-  $(toggleNavSelector).click(function () {
-    selector = '.' + $(this).attr('href').split('#').join('');
-    isHidden = $(selector).hasClass('hidden');
-
-    togglers = $(toggleNavSelector);
-    togglers.each(function () {
-      eachSelector = '.' + $(this).attr('href').split('#').join('');
-      $(eachSelector).toggleClass('hidden', true);
-    });
-
-    if (isHidden == true) {
-      $(selector).toggleClass('hidden');
-    }
-  });
-});
-
-    </script>
+    <script src="js/app.js"></script>
 
   </body>
 </html>
