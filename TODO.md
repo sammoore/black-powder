@@ -1,5 +1,7 @@
 # TODO
 
+The following TODO is no longer up to date, and will soon disappear. To see a more accurate roadmap, see https://docs.google.com/document/d/18KNhtp8p8MDkYgCOrgwUFB6453kJDUPvQi5W0YYw1GE
+
 ## Assets
 
 - [x] Confirm all "links to video URLs" in spreadsheet are accurate.
