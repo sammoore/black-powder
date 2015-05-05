@@ -217,10 +217,11 @@ body {
 }
  
 .brand {  
+  margin-top: 12px;
   background: url('img/BPW_Logo@2x.png') no-repeat;
-  background-size: 57px 32px;
-  height: 27px;
-  width: 308px;
+  background-size: 68px 37px;
+  height: 37px;
+  width: 200px;
 }
 
 .heading {
