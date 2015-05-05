@@ -143,6 +143,7 @@
                 </ul>
               </div>
             </div>
+
           </div>
           <div class="dp hidden sub-nav-section col-md-12">
             <div class="row row-centered">
@@ -204,7 +205,7 @@
 
         <div class="container">
           <h1 class="heading"><span>Black Powder Works</span></h1>
-          <p class="lead"><span>film makers, producers and creatives</span></p>
+          <p class="lead"><span>Bold Stories. New Media. No Boundaries.</span></p>
           <!-- ><p class="lead">
             <a href="#" class="btn btn-lg btn-default">Learn more</a>
           </p>
@@ -344,7 +345,7 @@
       </div>
     </div>
     
-      <div class="cover-wrapper contact">
+      <div class="cover-wrapperr contact">
         <div class="cover-contact">
           <div class="container">
             <div class="row text-center">
@@ -355,22 +356,22 @@
                 <div class="row">
                   <div class="col-xs-10 col-xs-offset-1 contact-section">
                     
-                    <h3>Black Powder Works</h3>
+                    <img class="contact-logo" src="img/Contact/Contact Logo.png" alt="Black Powder Works" />
 
                     <dl class="contact-info-list">
+                      <dt>Casey Unterman - Head of Production</dt>
+                      <dl>e: <a href="mailto:casey@blackpowderworks.com">casey@blackpowderworks.com</a></dl>
                       <dt>Raul Gasteazoro - Founder / Executive Producer</dt>
                       <dl>e: <a href="mailto:raul@blackpowderworks.com">raul@blackpowderworks.com</a></dl>
-                      <dt>Casey Unterman - Producer / Business Manager</dt>
-                      <dl>e: <a href="mailto:casey@blackpowderworks.com">casey@blackpowderworks.com</a></dl>
-                      <dt>Ian Rowan - Associate Producer / Social Media</dt>
-                      <dl>e: <a href="mailto:ian@blackpowderworks.com">ian@blackpowderworks.com</a></dl>
+                      <dt>Jeremy Hansen - Head of Post Production</dt>
+                      <dl>e: <a href="mailto:jeremy@blackpowderworks.com">jeremy@blackpowderworks.com</a></dl>
                     </dl>
 
                     <ul class="contact-info-social center-block">
-                      <li>TW</li>
-                      <li>FB</li>
-                      <li>YT</li>
-                      <li>VM</li>
+                      <li><img src="img/Contact/twitter.png"></li>
+                      <li><img src="img/Contact/fb.png"></li>
+                      <li><img src="img/Contact/youtube.png"></li>
+                      <li><img src="img/Contact/vimeo.png"></li>
                     </ul>
 
                   </div>
@@ -386,7 +387,7 @@
                 <div class="row">
                   <div class="col-xs-10 col-xs-offset-1 contact-section">
 
-                    <form>
+                    <form class="contact-form">
 
                       <div class="form-group">
                         <label for="contact-name">Name (Required):</label>
@@ -403,6 +404,9 @@
                         <textarea class="form-control" rows="5" id="contact-message"></textarea>
                       </div>
 
+                      <div class="form-group">
+                        <input type="submit" class="btn btn-default">
+                      </div>
                     </form>
 
                   </div>
@@ -471,11 +475,21 @@ var configureGrid = function( selector ) {
   });
 };
 
+var configureSocial = function( selector ) {
+  $(selector).each(function () {
+    var $img = $(this).find('img').first();
+    hover_url = $img.attr('src').split('.png').join(' hover.png');
+    $img.hoverImg(hover_url);
+  });
+};
+
 $(document).ready(function () {
   $("#menu").sidr();
   
   configureGrid('.work-section');
   configureGrid('.impact-section');
+
+  configureSocial('.contact-section ul li');
 
   toggleNavSelector = 'a#toggleNav';
 
