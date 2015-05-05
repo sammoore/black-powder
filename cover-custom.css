@@ -187,16 +187,24 @@ body {
   background-color: #50E3C2;
   background-color: rgba(80,227,194, 0.60);
   background-color: #888888;
-  background-color: rgba(125, 125, 125, 0.80);
+  background-color: rgba(255, 255, 255, 0.50);
   padding-top: 10px;
   padding-bottom: 10px;
+  font-size: 16px;
 }
 
 /* each sub-nav-section has one, maybe more, rows */
 
 .sub-nav-section ul li {
-  padding-top: 5px;
-  padding-bottom: 5px;
+  margin: 10px 0;
+}
+
+.sub-nav-section ul li a, .sub-nav-section ul li a:hover {
+  color: white;
+}
+
+.sub-nav-section ul li a:hover {
+  text-decoration: underline;
 }
 
 /*
