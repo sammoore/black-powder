@@ -135,18 +135,46 @@ $(document).ready(function () {
   // ---------------------
   toggleArtistSelector = '.toggleArtist';
 
-  // hide all containers
-  $(toggleArtistSelector).each(function () {
+  hideContainers = function () {
   	$($(this).parent()).next().toggleClass('hidden', true);
-  });
+
+  	if ( ! $(this).attr('data-artists') ) {
+  		$(this).attr('data-artists', '#artists');
+  	}
+
+		if ( $(this).attr('href') == '#artists' ) {
+			$(this).attr('href', $(this).attr('data-artists'));
+			$(this).attr('data-artists', '#artists');
+  	}
+
+  	// since the .click() gets called before the href is triggered,
+  	// we need to swap the attributes out from the start.
+  	href = $(this).attr('data-artists');
+  	nextHref = $(this).attr('href');
+  	$(this).attr('href', href);
+  	$(this).attr('data-artists', nextHref);
+  }
+
+  $(toggleArtistSelector).each(hideContainers);
 
   // handle toggle attempts
   $(toggleArtistSelector).click(function () {
   	$toggler = $(this);
   	$container = $toggler.parent().next();
-  	
-  	// 1. cache whether the corresponding container for clicked link is hidden
+
+  	// 0. cache whether the corresponding container for clicked link is hidden
   	wasHidden = $container.hasClass('hidden');
+
+  	// 1. hide all other containers
+  	$(toggleArtistSelector)
+  	.not(function (index, element) {
+  		if (wasHidden) {
+  			return ($(element).attr('data-artists') == $toggler.attr('data-artists'));
+  		} else {
+  			return ($(element).attr('href') == $toggler.attr('href'));
+  		}
+  	})
+  	.each(hideContainers);
 
   	// 2. hide all containers
   	togglers = $(toggleArtistSelector);
@@ -158,6 +186,13 @@ $(document).ready(function () {
   	if (wasHidden) {
   		$container.toggleClass('hidden');
   	}
+
+  	// 5. Swap href with #artists for better user experience.
+  	href = $toggler.attr('data-artists');
+  	nextHref = $toggler.attr('href');
+  	$toggler.attr('href', href);
+  	$toggler.attr('data-artists', nextHref);
+  	console.log('done click');
   });
 
   // ------------
