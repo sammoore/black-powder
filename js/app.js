@@ -8,6 +8,8 @@ this.configureGridItemHover = function( img ) {
   hover_url = img.attr('src').split("BW.png").join("Color.png");
 
   img.hoverImg(hover_url);
+
+
 };
 
 /* configureGridItemPlayback
@@ -68,6 +70,7 @@ this.configureStretchToFitVideo = function( selector ) {
    </div>
  *
  * and triggers configuration for the `a` and `img` element respectively.
+ * It also makes any `.label` only appear on hover.
  */
 this.configureGrid = function( selector ) {
   items = $(selector).find('.item');
@@ -80,6 +83,13 @@ this.configureGrid = function( selector ) {
 
     img = $item.find('img').first();
     configureGridItemHover(img);
+
+    label = $item.find('.label').first();
+    label.toggleClass('hidden', true);
+    $(a).hover(function () {
+    	console.log('hello');
+    	$(this).find('.label').first().toggleClass('hidden');
+    });
   });
 };
 
