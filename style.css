@@ -51,6 +51,8 @@ video#bgvid {
   text-align: center;
   color: white;
   font-size: 16px;
+  /* Advanced */
+  pointer-events: none;
 }
 
 .navbar-inverse {
