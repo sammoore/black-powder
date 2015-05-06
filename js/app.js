@@ -142,4 +142,18 @@ $(document).ready(function () {
   		});
   	}
   });
+
+  // ---------------------------------
+  // TRIGGER VIDEO PAUSE ON LOGO CLICK
+  // ---------------------------------
+  $('.toggleVideoPlayback').click(function () {
+  	$video.each(function () {
+  		if (this.currentTime > 0 && !this.paused && !this.ended) {
+  			// video is playing
+  			this.pause();
+  		} else {
+  			this.play();
+  		}
+  	});
+  });
 });
