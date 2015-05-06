@@ -115,9 +115,33 @@ $(document).ready(function () {
     });
 
     // 3. if the clicked container was hidden, we then show it.
-    if (isHidden == true) {
+    if (isHidden) {
       $(selector).toggleClass('hidden');
     }
+  });
+
+  // ---------------------
+  // Artist Collapse-ables
+  // ---------------------
+  toggleArtistSelector = '.toggleArtist';
+
+  $(toggleArtistSelector).click(function () {
+  	$toggler = $(this);
+  	$container = $toggler.next();
+  	
+  	// 1. cache whether the corresponding container for clicked link is hidden
+  	wasHidden = $container.hasClass('hidden');
+
+  	// 2. hide all containers
+  	togglers = $(toggleArtistSelector);
+  	togglers.each(function () {
+  		$(this).next().toggleClass('hidden', true);
+  	});
+
+  	// 3. if the chosen container was hidden, we then show it.
+  	if (wasHidden) {
+  		$container.toggleClass('hidden');
+  	}
   });
 
   // ------------
