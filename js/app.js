@@ -125,6 +125,12 @@ $(document).ready(function () {
   // ---------------------
   toggleArtistSelector = '.toggleArtist';
 
+  // hide all containers
+  $(toggleArtistSelector).each(function () {
+  	$(this).next().toggleClass('hidden', true);
+  });
+
+  // handle toggle attempts
   $(toggleArtistSelector).click(function () {
   	$toggler = $(this);
   	$container = $toggler.next();
