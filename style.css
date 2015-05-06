@@ -38,6 +38,21 @@ video#bgvid {
   height: 98%;
 }
 
+.item .label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /* Features */
+  width: 100%;
+  padding: 10px 0;
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Font */
+  text-align: center;
+  color: white;
+  font-size: 16px;
+}
+
 .navbar-inverse {
   background-color: transparent;
   border: none;
