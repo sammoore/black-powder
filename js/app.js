@@ -137,13 +137,13 @@ $(document).ready(function () {
 
   // hide all containers
   $(toggleArtistSelector).each(function () {
-  	$(this).next().toggleClass('hidden', true);
+  	$($(this).parent()).next().toggleClass('hidden', true);
   });
 
   // handle toggle attempts
   $(toggleArtistSelector).click(function () {
   	$toggler = $(this);
-  	$container = $toggler.next();
+  	$container = $toggler.parent().next();
   	
   	// 1. cache whether the corresponding container for clicked link is hidden
   	wasHidden = $container.hasClass('hidden');
@@ -151,7 +151,7 @@ $(document).ready(function () {
   	// 2. hide all containers
   	togglers = $(toggleArtistSelector);
   	togglers.each(function () {
-  		$(this).next().toggleClass('hidden', true);
+  		$(this).parent().next().toggleClass('hidden', true);
   	});
 
   	// 3. if the chosen container was hidden, we then show it.
