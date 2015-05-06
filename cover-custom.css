@@ -93,8 +93,7 @@ body {
  * Navigation
  */
 
-.non-sticky {
-  position: absolute; /* Check + Update Position, maybe cover-heading */
+.sticky, .non-sticky {
   z-index: 200;
   min-height: 58px;
   width: 100%;
@@ -102,9 +101,14 @@ body {
   left: 0;
 }
 
-.non-sticky > .row {
-  display: block;
-  margin: 0 auto;
+.sticky {
+  position: fixed;
+  background-color: #333;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.non-sticky {
+  position: absolute;
 }
 
 .cover-nav {
