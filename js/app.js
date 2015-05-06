@@ -30,6 +30,11 @@ this.configureGridItemPlayback = function ( a ) {
           index: 'vimeo.com/',
           id: '/',
           src: 'https://player.vimeo.com/video/%id%?autoplay=1'
+        },
+        youtube: {
+        	index: 'youtu.be/',
+        	id: '/',
+        	src: 'https://www.youtube.com/embed/%id%?autoplay=1'
         }
       }
     }
