@@ -47,6 +47,16 @@ video#bgvid {
   background-color: rgba(67, 67, 67, 0.80);
 }
 
+.wrapper.artists {
+  display: table;
+  min-height: 125%;
+}
+
+.wrapper.artists .container {
+  display: table-cell;
+  vertical-align: middle;
+}
+
 .grid-heading {
   padding: 0;
   margin: 5px -15px;
@@ -144,4 +154,11 @@ video#bgvid {
   background-color: black;
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
+}
+
+a.anchor {
+  position: relative;
+  display: block;
+  top: -80px;
+  visibility: hidden;
 }
