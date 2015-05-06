@@ -95,7 +95,7 @@ body {
 
 .sticky, .non-sticky {
   z-index: 200;
-  min-height: 58px;
+  min-height: 80px;
   width: 100%;
   top: 0;
   left: 0;
@@ -126,9 +126,9 @@ body {
   padding-right: 0;
   padding-left: 0;
   padding-bottom: 0;
+  margin-top: 15px;
   font-size: 15px;
   font-weight: bold;
-  line-height: 30px;
   text-transform: uppercase;
 }
 
@@ -223,9 +223,9 @@ body {
 .brand {  
   margin-top: 12px;
   background: url('img/BPW_Logo@2x.png') no-repeat;
-  background-size: 68px 37px;
-  height: 37px;
-  width: 200px;
+  background-size: 100px 56px;
+  width: 100px;
+  height: 56px;
 }
 
 .heading {
