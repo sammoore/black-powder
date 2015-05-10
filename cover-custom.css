@@ -95,7 +95,7 @@ body {
 
 .sticky, .non-sticky {
   z-index: 200;
-  min-height: 80px;
+  min-height: 64px;
   width: 100%;
   top: 0;
   left: 0;
@@ -126,7 +126,7 @@ body {
   padding-right: 0;
   padding-left: 0;
   padding-bottom: 0;
-  margin-top: 15px;
+  margin-top: 8px;
   font-size: 15px;
   font-weight: bold;
   text-transform: uppercase;
@@ -166,7 +166,7 @@ body {
  *
  */
 
-.row-centered {
+/*.row-centered {
   text-align: center;
 }
 
@@ -183,11 +183,11 @@ body {
   list-style-type: none;
   padding-left: 0;
   padding-right: 0;
-}
+}*/
 
 /* takes up entire viewport; a section */
 
-.sub-nav-section {
+/*.sub-nav-section {
   background-color: #50E3C2;
   background-color: rgba(80,227,194, 0.60);
   background-color: #888888;
@@ -195,11 +195,11 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 16px;
-}
+}*/
 
 /* each sub-nav-section has one, maybe more, rows */
 
-.sub-nav-section ul li {
+/*.sub-nav-section ul li {
   margin: 10px 0;
 }
 
@@ -209,7 +209,7 @@ body {
 
 .sub-nav-section ul li a:hover {
   text-decoration: underline;
-}
+}*/
 
 /*
  * Assets
@@ -221,11 +221,11 @@ body {
 }
  
 .brand {  
-  margin-top: 12px;
+  margin-top: 15px;
   background: url('img/BPW_Logo@2x.png') no-repeat;
-  background-size: 100px 56px;
-  width: 100px;
-  height: 56px;
+  background-size: 57px 32px;
+  width: 57px;
+  height: 32px;
 }
 
 .heading {
