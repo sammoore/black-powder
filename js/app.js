@@ -236,4 +236,27 @@ $(document).ready(function () {
   		}
   	});
   });
+
+  // ===========================
+  // Nav-Bar Sticky After Splash
+  // ===========================
+
+  // make nav-bar non-sticky with JavaScript, so we have sensible fall-back
+  $('.bar').toggleClass('sticky', false);
+  $('.bar').toggleClass('non-sticky', true);
+
+  // swap the class based on direction of scroll
+  var contentWaypoint = new Waypoint({
+  	element: $('.wrapper-anchor'),
+  	handler: function(direction) {
+  		if (direction == 'down') {
+  			$('.bar').toggleClass('non-sticky', false);
+  			$('.bar').toggleClass('sticky', true);
+  		} else {
+  			$('.bar').toggleClass('sticky', false);
+  			$('.bar').toggleClass('non-sticky', true);
+  		}
+  	}
+  });
+
 });
