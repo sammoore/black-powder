@@ -276,6 +276,21 @@ h3.brand-alt {
 
 .col-sm-height .row { height: 100%; min-height: 100%; }
 
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+  .cover-contact .row, .cover-contact .row {
+    margin: 0;
+  }
+
+  .contact-section .row {
+    margin: 0 auto;
+  }
+
+  h3.brand-alt {
+    height: 150px;
+  }
+}
+
 /* Bootstrap same height code */
 
 /* columns of same height styles */

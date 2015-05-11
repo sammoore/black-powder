@@ -138,8 +138,15 @@ video#bgvid {
   color: #777;
 }
 
+@media only screen and (max-width : 480px) {
+  .contact-section ul li {
+    margin: 5px;
+    padding: 5px;
+  }
+}
+
 .contact-logo {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .contact-form {
