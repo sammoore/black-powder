@@ -140,8 +140,13 @@ video#bgvid {
 
 @media only screen and (max-width : 480px) {
   .contact-section ul li {
-    margin: 5px;
-    padding: 5px;
+    margin: 2px;
+  }
+}
+
+@media only screen and (max-width : 320px) {
+  .contact-section ul li {
+    margin: -2px;
   }
 }
 
