@@ -246,11 +246,14 @@ body {
 }
 
 h3.brand-alt {
+  display: block;
   width: 100%;
   height: 191px;
   background: url('img/Contact/Contact Logo.png') no-repeat;
   background-size: fill;
   background-size: contain;
+  background-position: center;
+  margin: 0 auto;
 }
 
 .heading {
@@ -278,8 +281,9 @@ h3.brand-alt {
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
-  .cover-contact .row, .cover-contact .row {
+  .cover-contact .row, .cover-contact .col-xs-height, .cover-contact .container {
     margin: 0;
+    padding: 0;
   }
 
   .contact-section .row {
