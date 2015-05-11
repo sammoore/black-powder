@@ -163,7 +163,7 @@ $(document).ready(function () {
   $(toggleArtistSelector).each(hideContainers);
 
   // handle toggle attempts
-  $(toggleArtistSelector).click(function () {
+  toggleArtistClick = function () {
   	$toggler = $(this);
   	$container = $toggler.parent().next();
 
@@ -198,7 +198,11 @@ $(document).ready(function () {
   	$toggler.attr('href', href);
   	$toggler.attr('data-artists', nextHref);
   	console.log('done click');
-  });
+  };
+
+  $(toggleArtistSelector).click(toggleArtistClick);
+
+  toggleArtistClick.call($(toggleArtistSelector).first());
 
   // ------------
   // SPLASH VIDEO
