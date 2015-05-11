@@ -52,7 +52,7 @@ video#bgvid {
   min-height: 125%;
 }
 
-.wrapper.artists .container {
+.wrapper.artists .va {
   display: table-cell;
   vertical-align: middle;
 }
