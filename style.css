@@ -106,9 +106,7 @@ video#bgvid {
   background-color: #CCC;
   background-color: rgba(255, 255, 255, 0.75);
   padding-top: 10px;
-  margin-top: 20px;
   padding-bottom: 10px;
-  margin-bottom: 20px;
 }
 
 .contact-section dl, .contact-section ul {
@@ -130,10 +128,13 @@ video#bgvid {
   border-radius: 10px;
   float: left;
   text-shadow: none;
+}
+
+.contact-section ul li a {
   color: #333;
 }
 
-.contact-section ul li:hover {
+.contact-section ul li a:hover {
   color: #777;
 }
 

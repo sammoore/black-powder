@@ -90,6 +90,21 @@ body {
   font-weight: bold;
 }
 
+.cover-wrapperr {
+  height: 100%;
+  min-height: 100%;
+}
+
+.cover-contact {
+  height: 100%;
+  min-height: 100%;
+}
+
+.cover-contact .container {
+  height: 100%;
+  min-height: 100%;
+}
+
 /*
  * Navigation
  */
@@ -247,3 +262,61 @@ body {
     background-size: inherit;
   }
 }
+
+.contact-section { height: 100%; min-height: 100%; }
+
+.col-sm-height .row { height: 100%; min-height: 100%; }
+
+/* Bootstrap same height code */
+
+/* columns of same height styles */
+
+.row-full-height {
+  height: 100%;
+}
+.col-full-height {
+  height: 100%;
+  vertical-align: middle;
+}
+.row-same-height {
+  display: table;
+  width: 100%;
+  /* fix overflow */
+  table-layout: fixed;
+}
+.col-xs-height {
+  display: table-cell;
+  float: none !important;
+}
+
+@media (min-width: 768px) {
+  .col-sm-height {
+    display: table-cell;
+    float: none !important;
+  }
+}
+@media (min-width: 992px) {
+  .col-md-height {
+    display: table-cell;
+    float: none !important;
+  }
+}
+@media (min-width: 1200px) {
+  .col-lg-height {
+    display: table-cell;
+    float: none !important;
+  }
+}
+
+/* vertical alignment styles */
+
+.col-top {
+  vertical-align: top;
+}
+.col-middle {
+  vertical-align: middle;
+}
+.col-bottom {
+  vertical-align: bottom;
+}
+
