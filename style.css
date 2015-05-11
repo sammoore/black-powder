@@ -49,7 +49,7 @@ video#bgvid {
 
 .wrapper.artists {
   display: table;
-  min-height: 125%;
+  min-height: 100%;
 }
 
 .wrapper.artists .va {
