@@ -231,6 +231,7 @@ body {
  * Assets
  */
 .brand span,
+.brand-alt span,
 .heading span {
   /* Hide Text */
   display: none;
@@ -242,6 +243,14 @@ body {
   background-size: 57px 32px;
   width: 57px;
   height: 32px;
+}
+
+h3.brand-alt {
+  width: 100%;
+  height: 191px;
+  background: url('img/Contact/Contact Logo.png') no-repeat;
+  background-size: fill;
+  background-size: contain;
 }
 
 .heading {
