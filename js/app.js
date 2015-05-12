@@ -294,6 +294,9 @@ $(document).ready(function () {
 	    failure: function() {
 	    	console.log('no good');
 	    }
+	  })
+	  .done(function (data) {
+	  	console.log(data);
 	  });
 
   	// 2. show error
