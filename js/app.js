@@ -263,4 +263,42 @@ $(document).ready(function () {
   	}
   });
 
+  // ===============
+  // FORM SUBMISSION
+  // ===============
+
+  $('.submit-error').hide();
+  $('.submit-button').click(function () {
+  	// 1. validation code TODO
+  	var name = $('input#contact-name').val();
+  	var email = $('input#contact-email').val();
+  	var message = $('textarea#contact-message').val();
+
+  	console.log(name);
+  	console.log(email);
+  	console.log(message);
+
+  	// 2. Compile AJAX request string
+
+  	var dataString = 'name='+ name +'&email=' + email + '&message=' + message;
+
+  	// 3. Try sending it
+
+  	$.ajax({
+	    type: "POST",
+	    url: "contact.php",
+	    data: dataString,
+	    success: function() {
+	      console.log("OWP!");
+	    },
+	    failure: function() {
+	    	console.log('no good');
+	    }
+	  });
+
+  	// 2. show error
+
+  	$('.submit-error').show();
+  });
+
 });

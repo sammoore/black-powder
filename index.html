@@ -487,7 +487,11 @@
                     <div class="row">
                       <div class="col-sm-12 col-md-11 col-md-offset-1 contact-section">
 
-                        <form class="contact-form">
+                        <form class="contact-form" action="">
+
+                          <div class="form-group submit-error">
+                            There was an error submitting your message.
+                          </div>
 
                           <div class="form-group">
                             <label for="contact-name">Name (Required):</label>
@@ -505,7 +509,7 @@
                           </div>
 
                           <div class="form-group">
-                            <input type="submit" class="btn btn-default">
+                            <input type="submit" class="btn btn-default submit-button">
                           </div>
                         </form>
 
