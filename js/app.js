@@ -268,7 +268,7 @@ $(document).ready(function () {
   // ===============
 
   $('.submit-error').hide();
-  $('.submit-button').click(function () {
+  $('#contact-form').on('submit', function () {
   	// 1. validation code TODO
   	var name = $('input#contact-name').val();
   	var email = $('input#contact-email').val();
@@ -302,6 +302,8 @@ $(document).ready(function () {
   	// 2. show error
 
   	$('.submit-error').show();
+
+  	return;
   });
 
 });
