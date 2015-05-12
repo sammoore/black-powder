@@ -47,12 +47,12 @@ if( $_POST ) {
     $message = '';
     
 	// Name 
-	$message.= '<p> Name : ' . $_POST['name'] . '</p>';
+	$message.= 'Name : ' . $_POST['name'] . '';
 
-	$message.= '<p> Email : ' . $_POST['email'] . '</p>';
+	$message.= 'Email : ' . $_POST['email'] . '';
 	    
     // Message
-    $message.= '<p> Message : ' . $_POST['message'] . '</p>';
+    $message.= 'Message : ' . $_POST['message'] . '';
 	
      
 /* send email */
