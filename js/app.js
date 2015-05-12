@@ -297,9 +297,9 @@ $(document).ready(function () {
 	  })
 	  .done(function (data) {
 	  	if (data == 'OK') {
-	  		$('.submit-error').val('Thanks for getting in touch! We will get back to you soon!');
+	  		$('.submit-error').html('Thanks for getting in touch! We will get back to you soon!');
 	  	} else if (data != 'ERROR') {
-	  		$('.submit-error').val(data);
+	  		$('.submit-error').html(data);
 	  	}
 
 	  	$('.submit-error').show();
