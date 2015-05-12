@@ -303,7 +303,8 @@ $(document).ready(function () {
 
   	$('.submit-error').show();
 
-  	return;
+  	// `false` prevent page reload
+  	return false;
   });
 
 });
