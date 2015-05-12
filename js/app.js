@@ -296,12 +296,14 @@ $(document).ready(function () {
 	    }
 	  })
 	  .done(function (data) {
-	  	console.log(data);
+	  	if (data == 'OK') {
+	  		$('.submit-error').val('Thanks for getting in touch! We will get back to you soon!');
+	  	} else if (data != 'ERROR') {
+	  		$('.submit-error').val(data);
+	  	}
+
+	  	$('.submit-error').show();
 	  });
-
-  	// 2. show error
-
-  	$('.submit-error').show();
 
   	// `false` prevent page reload
   	return false;
