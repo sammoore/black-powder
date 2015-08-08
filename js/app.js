@@ -48,20 +48,12 @@ this.configureGridItemPlayback = function ( a ) {
  * maintaining aspect ratio as per W3 Specifications.
  */
 this.configureStretchToFitVideo = function( selector ) {
-	var $video = $(selector),
-	    videoRatio = selector.videoWidth / selector.videoHeight,
-	    tagRatio = $video.width() / $video.height();
-	if (videoRatio < tagRatio) {
-	  $video.css('-webkit-transform','scaleX(' + tagRatio / videoRatio  + ')')
-	  $video.css('-moz-transform','scaleX(' + tagRatio / videoRatio  + ')')
-	  $video.css('-ms-transform','scaleX(' + tagRatio / videoRatio  + ')')
-	  $video.css('transform','scaleX(' + tagRatio / videoRatio  + ')')
-	} else if (tagRatio < videoRatio) {
-	  $video.css('-webkit-transform','scaleY(' + videoRatio / tagRatio  + ')')
-	  $video.css('-moz-transform','scaleY(' + videoRatio / tagRatio  + ')')
-	  $video.css('-ms-transform','scaleY(' + videoRatio / tagRatio  + ')')
-	  $video.css('transform','scaleY(' + videoRatio / tagRatio  + ')')
-	}
+	var video     	= $(selector).get(0),
+	    deltaWidth 	= $(window).width()  - video.offsetWidth,
+	    deltaHeight = $(window).height() - video.offsetHeight
+
+	video.style.marginLeft = (deltaWidth / 2) + "px";
+	video.style.marginTop  = (deltaHeight / 2) + "px";
 };
 
 /* configureGrid
@@ -91,9 +83,13 @@ this.configureGrid = function( selector ) {
 
     label = $item.find('.item-label').first();
     label.toggleClass('hidden', true);
+
+    brand = $item.find('.item-brand').first();
+    brand.toggleClass('hidden', true);
+
     $(a).hover(function () {
-    	console.log('hello');
     	$(this).find('.item-label').first().toggleClass('hidden');
+    	$(this).find('.item-brand').first().toggleClass('hidden');
     });
   });
 };
@@ -280,14 +276,18 @@ $(document).ready(function () {
 
   	// 2. Compile AJAX request string
 
-  	var dataString = 'name='+ name +'&email=' + email + '&message=' + message;
+  	// var dataString = 'name='+ name +'&email=' + email + '&message=' + message;
 
   	// 3. Try sending it
 
   	$.ajax({
 	    type: "POST",
 	    url: "contact.php",
-	    data: dataString,
+	    data: {
+	    	"name": name,
+	    	"email": email,
+	    	"message": message
+	    },
 	    success: function() {
 	      console.log("OWP!");
 	    },

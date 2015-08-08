@@ -11,10 +11,10 @@ body {
 }
 
 video#bgvid {
-  min-width: 100%;
-  min-height: 100%;
-  width: 100%;
-  height: 100%;
+  width: 177.778vh;
+  height: 100vh;
+  min-width: 100vw;
+  min-height: 56.25vw;
   background-image: url('img/cover-background.png');
   background-size: cover;
 }
@@ -38,13 +38,13 @@ video#bgvid {
 }
 
 /* prevents selecting brand on navigation bar */
-.wrapper .container h3 {
+.wrapper .container h3 /* .grid-heading, effectively */ {
   display: inline-block;
   margin-left: 0;
   padding: 5px 20px;
   /* Features */
   background-color: #444;
-  background-color: rgba(67, 67, 67, 0.80);
+  background-color: rgba(67, 67, 67, 0.50);
 }
 
 .wrapper.artists {
@@ -89,6 +89,40 @@ video#bgvid {
   pointer-events: none;
 }
 
+.item-brand 
+{
+  display: none;
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  /* Fetaures */
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Advanced */
+  pointer-events: none;
+  }
+  .item:hover .item-brand {
+    display: block;
+  }
+  .item-brand div
+  {
+    position: absolute;
+    top: 25%; bottom: 25%;
+    left: 0; right: 0;
+    margin: auto;
+    /* Features */
+    width: 50%;
+    height: 50%;
+    /* Image Sizing */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* Advanced */
+    pointer-events: none;
+}
+
 .navbar-inverse {
   background-color: transparent;
   border: none;
@@ -99,18 +133,40 @@ video#bgvid {
   background-size: 100% auto;
   background-size: cover;
   background-position: center;
+
+  text-align: center;
+  white-space: no-wrap;
+}
+
+.contact:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
+}
+
+.contact .container {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .contact-section {
   color: black;
   background-color: #CCC;
   background-color: rgba(255, 255, 255, 0.75);
-  padding-top: 10px;
-  padding-bottom: 10px;
+}
+
+.contact-section-old {
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 5%; right: 5%;
+  margin: auto;
+  padding: 10px;
 }
 
 .contact-section dl, .contact-section ul {
-  text-align: left;
+  text-align: center;
 }
 
 .contact-section ul {
@@ -163,10 +219,23 @@ video#bgvid {
   color: black;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input, 
+.contact-form textarea {
+  transition: background-color 0.5s ease;
   background-color: black;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.6);
   color: white;
+}
+
+.contact-form textarea {
+  height: 180px;
+}
+
+.contact-form input:hover, 
+.contact-form textarea:hover,
+.contact-form input:active,
+.contact-form textarea:active {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 a.anchor {
