@@ -2,6 +2,11 @@ body {
   font-family: "typical_writerregular", "corbertregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+h2 {
+  font-size: 2.5em;
+  text-align: center;
+}
+
 .col-menu {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -228,7 +233,7 @@ video#bgvid {
 }
 
 .contact-form textarea {
-  height: 180px;
+  height: 180 px;
 }
 
 .contact-form input:hover, 

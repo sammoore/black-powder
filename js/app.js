@@ -198,7 +198,7 @@ $(document).ready(function () {
 
   $(toggleArtistSelector).click(toggleArtistClick);
 
-  toggleArtistClick.call($(toggleArtistSelector).first());
+  // toggleArtistClick.call($(toggleArtistSelector).first());
 
   // ------------
   // SPLASH VIDEO
