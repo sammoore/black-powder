@@ -25,7 +25,10 @@ video#bgvid {
 }
 
 @media screen and (max-device-width: 800px) {
-  .cover-wrapper { background: url('img/cover-background.png') #000 no-repeat center center fixed; }
+  
+  .cover-wrapper { 
+    background: url('img/cover-background.png') #000 no-repeat center center; 
+  }
   video#bgvid { display: none; }
 }
 
